@@ -1,0 +1,15 @@
+{
+    "name": "fileshare",
+    "version": "1.0.0",
+    "description": "this is file sharing app using nodejs and socket.io.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "jayvardhan prajapat",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^4.3.1"
+    }
+}
