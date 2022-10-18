@@ -1,3 +1,3 @@
 # real-time-file-sharing
 
-npm install
+install npm
