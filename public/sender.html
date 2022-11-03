@@ -9,7 +9,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
+
+  
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">
+            Real-Share
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+  
+        <div class="nav-links">
+          <a href="/index.html" target="_blank">Home</a>
+          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">About</a>
+          <a href="//github.io/jo_geek" target="_blank">Github</a>
+          <!-- <a href="http://stackoverflow.com/users/4084003/" target="_blank">Team</a> -->
+          <a href="/team">Team</a>
+          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Contact</a>
+        </div>
+      </div>
+
+
 
     <div class="app">
         <div class="screen join-screen active">
@@ -40,6 +69,11 @@
             </div>
         </div>
     </div>
+
+    <div class="imgdiv"> 
+        <img src="../public/image/hero-sharing.png" alt="" height="400px" width="600px">
+      </div>
+
 
     <script type="text/javascript" src="socket.io/socket.io.js"></script>
     <script type="text/javascript" src="code.js"></script>
