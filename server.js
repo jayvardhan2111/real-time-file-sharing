@@ -17,6 +17,8 @@ app.get('/receiver',(req,res)=> res.sendFile(__dirname+'/public/receiver.html'))
 
 app.get('/team',(req,res)=> res.sendFile(__dirname+'/public/team/team.html'))
 
+app.get('/about',(req,res)=> res.sendFile(__dirname+'/public/about.html'))
+
 
 
 io.on("connection", function (socket) {

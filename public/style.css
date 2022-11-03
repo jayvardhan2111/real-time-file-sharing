@@ -7,7 +7,7 @@
     body {
         background: #FFDDAA;
       
-        font-family: sans-serif;
+        font-family: 'segoe ui';
     }
     
     .screen {
@@ -21,7 +21,7 @@
     .app {
         
         position: fixed;
-        top: 10px;
+        top: 50px;
         left: 30%;
         transform: translateX(-50%);
         width: 90%;
