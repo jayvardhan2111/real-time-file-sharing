@@ -15,6 +15,10 @@ app.get('/sender',(req,res)=> res.sendFile(__dirname+'/public/sender.html'))
 
 app.get('/receiver',(req,res)=> res.sendFile(__dirname+'/public/receiver.html'))
 
+app.get('/team',(req,res)=> res.sendFile(__dirname+'/public/team/team.html'))
+
+
+
 io.on("connection", function (socket) {
     socket.on("sender-join", function (data) {
         socket.join(data.uid);

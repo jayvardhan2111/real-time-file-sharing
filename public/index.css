@@ -66,14 +66,26 @@ body {
 
 .center {
   position: absolute;
-  left: 50%;
+  left: 20%;
   top: 50%;
   transform: translate(-50%, -50%);
   border: 10px groove #111;
+  background-color: #FFDDAA;
   padding: 50px;
+  border-radius: 34px;
+  width: 300px;
   }
 
+.body{
+  background-color: #FFDDAA;
+}
 
+.imgdiv{
+margin-left: 600px;
+margin-top: 100px;
+height:500px;
+width: 600px;
+}
 
 @media (max-width:600px) {
   .nav > .nav-btn {
