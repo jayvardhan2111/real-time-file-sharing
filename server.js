@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname + "/public")));
 // new data
 app.get('/sender',(req,res)=> res.sendFile(__dirname+'/public/sender.html'))
 
+app.get('/receiver',(req,res)=> res.sendFile(__dirname+'/public/receiver.html'))
+
 io.on("connection", function (socket) {
     socket.on("sender-join", function (data) {
         socket.join(data.uid);
