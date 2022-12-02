@@ -51,6 +51,34 @@ body {
 }
 
 
+.imgdivabout{
+  margin-left: 750px;
+  margin-top:0px;
+  height:500px;
+  width: 600px;
+}
+.sectionabout{
+  background-color: #FFDDAA;
+  height:620px;
+}
+
+.aboutdiv{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 7px groove #111; */
+  background-color: #FFDDAA;
+  padding: 50px;
+  border-radius: 34px;
+  width: 700px;
+  height: 400px;
+  font-weight: bold;
+  font-size: 25px;
+  
+}
+
+
 /* send and receive button css */
 
 .form button {
