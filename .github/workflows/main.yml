@@ -4,7 +4,7 @@ name: ci
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   build:
@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-node-repo:build-${{ github.run_number }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/real-time-file-sharing:build-${{ github.run_number }}
