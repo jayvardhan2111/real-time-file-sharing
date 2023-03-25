@@ -7,62 +7,72 @@ body {
   font-family: 'segoe ui';
 }
 
+.bg-navbar {
+  background-color: #313B78 !important;
+}
+
 .nav {
-  height: 50px;
+  height: 54px;
   width: 100%;
   background-color: #111;
   position: relative;
 }
 
-.nav > .nav-header {
+.nav>.nav-header {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
 }
 
-.nav > .nav-btn {
+.nav>.nav-btn {
   display: none;
 }
 
-.nav > .nav-links {
+.nav>.nav-links {
   display: inline;
   float: right;
   font-size: 18px;
+  margin-left: 100px;
 }
 
-.nav > .nav-links > a {
+.nav>.nav-links>a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   color: #efefef;
+  margin-left: 15px;
+  margin-top: 3px;
 }
 
-.nav > .nav-links > a:hover {
+.nav>.nav-links>a:hover {
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
 }
 
-.nav > #nav-check {
+.nav>#nav-check {
   display: none;
 }
 
 
-.imgdivabout{
+.imgdivabout {
   margin-left: 750px;
-  margin-top:0px;
-  height:500px;
+  margin-top: 0px;
+  height: 500px;
   width: 600px;
 }
-.sectionabout{
+
+.sectionabout {
   background-color: #FFDDAA;
-  height:620px;
+  height: 620px;
 }
 
-.aboutdiv{
+.aboutdiv {
   position: absolute;
   left: 30%;
   top: 50%;
@@ -71,11 +81,11 @@ body {
   background-color: #FFDDAA;
   padding: 50px;
   border-radius: 34px;
-  width: 700px;
+  width: 704px;
   height: 400px;
   font-weight: bold;
   font-size: 25px;
-  
+
 }
 
 
@@ -97,47 +107,53 @@ body {
   left: 20%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 10px groove #111;
+  border: 6px solid #094D86;
   background-color: #FFDDAA;
   padding: 50px;
   border-radius: 34px;
   width: 300px;
-  }
+}
 
-.body{
+.body {
   background-color: #FFDDAA;
 }
 
-.imgdiv{
-margin-left: 600px;
-margin-top: 100px;
-height:500px;
-width: 600px;
+.imgdiv {
+  display: flex;
+  justify-content: end;
+  justify-items: center;
+  margin-right: 200px;
+  margin-top: 50px;
 }
 
 @media (max-width:600px) {
-  .nav > .nav-btn {
+  .nav>.nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-btn > label {
+
+  .nav>.nav-btn>label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
     background-color: #111;
   }
-  .nav > .nav-btn > label > span {
+
+  .nav>.nav-btn>label>span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+
+  .nav>.nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -148,14 +164,17 @@ width: 600px;
     top: 50px;
     left: 0px;
   }
-  .nav > .nav-links > a {
+
+  .nav>.nav-links>a {
     display: block;
     width: 100%;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+
+  .nav>#nav-check:not(:checked)~.nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
+
+  .nav>#nav-check:checked~.nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }

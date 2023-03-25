@@ -3,25 +3,25 @@
         padding: 0px;
         box-sizing: border-box;
     }
-    
+
     body {
         background: #FFDDAA;
-      
+
         font-family: 'segoe ui';
     }
-    
+
     .screen {
         display: none;
     }
-    
+
     .screen.active {
         display: block;
     }
-    
+
     .app {
-        
+
         position: fixed;
-        top: 50px;
+        top: 60px;
         left: 30%;
         transform: translateX(-50%);
         width: 90%;
@@ -34,32 +34,32 @@
     }
 
 
-    
-.imgdiv{
-    margin-left: 600px;
-    margin-top: 100px;
-    height:500px;
-    width: 600px;
+
+    .imgdiv {
+        margin-left: 600px;
+        margin-top: 100px;
+        height: 500px;
+        width: 600px;
     }
-    
+
     .join-screen .form {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         padding: 50px;
     }
-    
+
     .join-screen .form .form-input {
         margin: 10px 0px;
     }
-    
+
     .join-screen .form h2 {
         font-size: 40px;
         line-height: 45px;
         color: #222;
         margin-bottom: 20px;
     }
-    
+
     .join-screen .form button {
         background: #111;
         padding: 10px 20px;
@@ -70,13 +70,13 @@
         outline: none;
         cursor: pointer;
     }
-    
+
     .join-screen .form #join-id b {
         color: #222;
         display: block;
         margin-top: 20px;
     }
-    
+
     .join-screen .form #join-id span {
         display: inline-block;
         font-size: 25px;
@@ -86,12 +86,12 @@
         border: 1px solid #111;
         margin-top: 5px;
     }
-    
+
     .join-screen .form label {
         color: #222;
         font-size: 18px;
     }
-    
+
     .join-screen .form input {
         display: block;
         margin: 10px 0px;
@@ -101,16 +101,16 @@
         font-size: 20px;
         padding: 10px;
     }
-    
+
     .fs-screen {
         padding: 20px;
     }
-    
+
     .fs-screen .file-input {
         width: 100%;
         border: 2px dashed #555;
     }
-    
+
     .fs-screen .file-input label {
         display: block;
         width: 100%;
@@ -119,11 +119,11 @@
         color: #111;
         font-size: 18px;
     }
-    
+
     .fs-screen .file-input label {
         display: none;
     }
-    
+
     .fs-screen .files-list {
         margin-top: 20px;
         display: flex;
@@ -131,21 +131,21 @@
         gap: 20px;
         flex-wrap: wrap;
     }
-    
+
     .fs-screen .files-list .title {
         width: 100%;
         /* font-size: 18px; */
         /* color: #555; */
         margin-bottom: 20px;
     }
-    
+
     .fs-screen .files-list .item {
         width: 33%;
         min-width: 200px;
         border: 1px solid #eee;
         box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
     }
-    
+
     .fs-screen .files-list .item .progress {
         padding: 30px;
         text-align: center;
@@ -153,7 +153,7 @@
         font-family: monospace;
         color: #222;
     }
-    
+
     .fs-screen .files-list .item .filename {
         font-size: 16px;
         padding: 5px;
