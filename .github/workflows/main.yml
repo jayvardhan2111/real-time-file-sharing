@@ -55,9 +55,9 @@ jobs:
         aws-region: ap-south-1
 
     - name: Update ECS Service
-        run: aws ecs update-service --cluster ${{ env.CLUSTER_NAME }} --service ${{ env.SERVICE_NAME }} --force-new-deployment
-        env:
-          AWS_DEFAULT_REGION: ap-south-1
+        run: |
+          aws ecs update-service --cluster ${{ env.CLUSTER_NAME }} --service ${{ env.SERVICE_NAME }} --force-new-deployment
+      
   
 
     # - name: create new revision and deploy to ECS
